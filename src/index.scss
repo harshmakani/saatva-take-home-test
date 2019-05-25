@@ -1,0 +1,111 @@
+$body-font: 'Pragati Narrow', sans-serif;
+$header-font: 'Questrial', sans-serif;
+$color-white: #ffffff;
+$color-primary: #b19780;
+$body-text-color: #3b3b3b;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $body-font;
+  font-size: 16px;
+  background: #f6f5f3;
+  color: $body-text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+  color: $body-text-color;
+}
+
+a,
+a:hover,
+a:visited,
+.btn-link:hover {
+  text-decoration: none;
+}
+
+.bg-white {
+  background: $color-white;
+}
+
+.primary-color {
+  color: $color-primary;
+}
+
+.list-group-item.active .primary-color {
+  color: $color-white;
+}
+
+// Article specific css
+.list-group-item,
+.list-group-item:first-child,
+.list-group-item:last-child {
+  border: 0;
+  border-radius: 0;
+}
+
+.read-more-btn {
+  cursor: pointer;
+  color: $color-primary;
+  background: none;
+  border: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-primary;
+  }
+}
+
+.long-description {
+  transition: height 500ms ease;
+}
+
+.list-group {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.tab-content {
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.btn-link {
+  text-align: inherit;
+  font-size: inherit;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-primary;
+  }
+}
+
+.card-header {
+  background: $color-white;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
