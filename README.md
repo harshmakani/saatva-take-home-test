@@ -6,3 +6,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 2) `cd saatva-take-home-test`
 3) `npm install`
 4) `npm run start`
+
+## Demo
+[https://harshmakani.github.io/saatva-take-home-test/](https://harshmakani.github.io/saatva-take-home-test/)
